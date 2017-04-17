@@ -9,13 +9,13 @@
 import UIKit
 
 @IBDesignable
-open class StepProgressBar: UIView {
+public class StepProgressBar: UIView {
     
     // MARK: Public API
     
     // Progress color. Default is blue.
     @IBInspectable
-    open var color: UIColor = UIColor.blue {
+    public var color: UIColor = UIColor.blue {
         didSet {
             setNeedsDisplay()
         }
@@ -23,7 +23,7 @@ open class StepProgressBar: UIView {
     
     // Background color. Default is lightGray.
     @IBInspectable
-    open var bgColor: UIColor = UIColor.lightGray {
+    public var bgColor: UIColor = UIColor.lightGray {
         didSet {
             setNeedsDisplay()
         }
@@ -31,7 +31,7 @@ open class StepProgressBar: UIView {
     
     // Number of all progress steps. Default is 2.
     @IBInspectable
-    open var stepsCount: UInt = 2 {
+    public var stepsCount: UInt = 2 {
         didSet {
             setNeedsDisplay()
         }
@@ -39,7 +39,7 @@ open class StepProgressBar: UIView {
     
     // Number of already progressed steps. Default is 0.
     @IBInspectable
-    open var progress: UInt = 0 {
+    public var progress: UInt = 0 {
         didSet {
             setNeedsDisplay()
         }
@@ -56,7 +56,7 @@ open class StepProgressBar: UIView {
         }
     }
     
-    var cornerRadius: CGFloat = 0 {
+    public var cornerRadius: CGFloat = 0 {
         didSet {
             setNeedsDisplay()
         }
@@ -64,7 +64,7 @@ open class StepProgressBar: UIView {
     
     // Offset between progress views. Default is 0.
     @IBInspectable
-    open var stepsOffset: CGFloat = 0 {
+    public var stepsOffset: CGFloat = 0 {
         didSet {
             setNeedsDisplay()
         }
@@ -76,7 +76,7 @@ open class StepProgressBar: UIView {
         return (frame.width - CGFloat(stepsCount - 1) * stepsOffset) / CGFloat(stepsCount)
     }
     
-    override open func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         super.draw(rect)
         
         // set start point of subview
