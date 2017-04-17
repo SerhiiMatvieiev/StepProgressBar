@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StepProgressBar_Example' do
+  pod 'StepProgressBar', :path => '../'
+
+  target 'StepProgressBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
