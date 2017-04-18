@@ -7,7 +7,7 @@
 
 ## Introduction
 
-'StepProgressBar' is a very simple and customizable step-by-step progress bar.
+`StepProgressBar` is a very simple and customizable step-by-step progress bar.
 
 ## Example
 
@@ -31,7 +31,7 @@ pod 'StepProgressBar'
 ```
 ### Manually
 
-Copy the 'StepProgressBar.swift' to your Xcode project. That should do it.
+Copy the `StepProgressBar.swift` to your Xcode project. That should do it.
 
 ## Author
 
