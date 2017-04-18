@@ -20,6 +20,13 @@ StepProgressBar can be used via code or interface builder.
 1. Drag `UIView` to your View Controller in the Storyboard.
 2. In the `Identity Inspector`, change the class to `StepProgressBar`.
  > :warning: Importand - change the module to `StepProgressBar` too.
+ 
+<img width="259" alt="screen shot 2017-04-18 at 17 16 21" src="https://cloud.githubusercontent.com/assets/14834451/25135920/51944f7a-245c-11e7-8775-d6b5667db197.png">
+ 
+3. Import `StepProgressBar` in your view controller class.
+```
+import StepProgressBar
+```
 
 ## Example
 
