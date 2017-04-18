@@ -11,6 +11,16 @@
 
 ![stepprogressbar](https://cloud.githubusercontent.com/assets/14834451/25133702/18165028-2456-11e7-8348-2e5b7ab4a5eb.gif)
 
+## Usage
+
+StepProgressBar can be used via code or interface builder.
+
+### Interface Builder
+
+1.Drag `UIView` to your View Controller in the Storyboard.
+2.In the `Identity Inspector`, change the class to `StepProgressBar`.
+> :white exclamation mark: Importand - change the module to `StepProgressBar` too.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
