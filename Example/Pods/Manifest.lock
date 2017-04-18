@@ -1,5 +1,5 @@
 PODS:
-  - StepProgressBar (0.1.0)
+  - StepProgressBar (0.1.1)
 
 DEPENDENCIES:
   - StepProgressBar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  StepProgressBar: 64ddab8bb4f70615d6189b97901cf2ce32b4e81d
+  StepProgressBar: 694bb1e0c7f3ed3a76cbd12dcf1af0f68ccb688b
 
 PODFILE CHECKSUM: 239caa7cb638335aede08c307e1fac9e6ec87d14
 

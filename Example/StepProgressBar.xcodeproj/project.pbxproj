@@ -29,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		3A8298BA8BEE37A73B687B52 /* Pods_StepProgressBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepProgressBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542C04DD1EA6146300F070A9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		54EEEE911EA56E58003E850C /* StepProgressBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StepProgressBar.framework; path = "../../Library/Developer/Xcode/DerivedData/StepProgressBar-cueaybkaxpmqnufjvalypkfmxnyz/Build/Products/Debug-iphonesimulator/StepProgressBar/StepProgressBar.framework"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StepProgressBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepProgressBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +43,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60A224D5B6D13D780D7F0982 /* Pods-StepProgressBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepProgressBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepProgressBar_Tests/Pods-StepProgressBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A074404ACF69B2C6BBAB4B26 /* Pods-StepProgressBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepProgressBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepProgressBar_Tests/Pods-StepProgressBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A4D57D174C76C8BAD98F3521 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A4D57D174C76C8BAD98F3521 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ABD031DA0790E8A21097076A /* Pods-StepProgressBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepProgressBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepProgressBar_Example/Pods-StepProgressBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BAD2A3C0432DD6A90369D3EA /* StepProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StepProgressBar.podspec; path = ../StepProgressBar.podspec; sourceTree = "<group>"; };
+		BAD2A3C0432DD6A90369D3EA /* StepProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StepProgressBar.podspec; path = ../StepProgressBar.podspec; sourceTree = "<group>"; };
 		DE1E778C0D73B4382D8F2D67 /* Pods_StepProgressBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepProgressBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2480773D188988A335EB781 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E2480773D188988A335EB781 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE7441675C6786AD1DF1B8D6 /* Pods-StepProgressBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepProgressBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepProgressBar_Example/Pods-StepProgressBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,8 @@
 		449EC4D68306052F56D66631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				542C04DD1EA6146300F070A9 /* CFNetwork.framework */,
+				54EEEE911EA56E58003E850C /* StepProgressBar.framework */,
 				DE1E778C0D73B4382D8F2D67 /* Pods_StepProgressBar_Example.framework */,
 				3A8298BA8BEE37A73B687B52 /* Pods_StepProgressBar_Tests.framework */,
 			);
@@ -523,10 +527,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60A224D5B6D13D780D7F0982 /* Pods-StepProgressBar_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -543,10 +543,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A074404ACF69B2C6BBAB4B26 /* Pods-StepProgressBar_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

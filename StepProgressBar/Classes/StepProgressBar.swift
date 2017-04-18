@@ -9,13 +9,21 @@
 import UIKit
 
 @IBDesignable
-public class StepProgressBar: UIView {
+open class StepProgressBar: UIView {
     
     // MARK: Public API
     
+    open func previous() {
+        progress = max(0, progress - 1)
+    }
+    
+    open func next() {
+        progress = min(stepsCount, progress + 1)
+    }
+    
     // Progress color. Default is blue.
     @IBInspectable
-    public var color: UIColor = UIColor.blue {
+    open var color: UIColor = UIColor.blue {
         didSet {
             setNeedsDisplay()
         }
@@ -23,23 +31,23 @@ public class StepProgressBar: UIView {
     
     // Background color. Default is lightGray.
     @IBInspectable
-    public var bgColor: UIColor = UIColor.lightGray {
+    open var bgColor: UIColor = UIColor.lightGray {
         didSet {
             setNeedsDisplay()
         }
     }
     
-    // Number of all progress steps. Default is 2.
+    // Number of all progress steps. Default is 5.
     @IBInspectable
-    public var stepsCount: UInt = 2 {
+    open var stepsCount: Int = 5 {
         didSet {
             setNeedsDisplay()
         }
     }
     
-    // Number of already progressed steps. Default is 0.
+    // Number of already progressed steps. Default is 1.
     @IBInspectable
-    public var progress: UInt = 0 {
+    open var progress: Int = 1 {
         didSet {
             setNeedsDisplay()
         }
@@ -47,24 +55,18 @@ public class StepProgressBar: UIView {
     
     // Corner radius. Default is 0.
     @IBInspectable
-    var _cornerRadius: CGFloat {
+    open var cornerRadius: CGFloat {
         get{
-            return cornerRadius
+            return _cornerRadius
         }
         set {
-            cornerRadius = max(0, min(newValue, frame.height / 2))
-        }
-    }
-    
-    public var cornerRadius: CGFloat = 0 {
-        didSet {
-            setNeedsDisplay()
+            _cornerRadius = max(0, min(newValue, frame.height / 2))
         }
     }
     
     // Offset between progress views. Default is 0.
     @IBInspectable
-    public var stepsOffset: CGFloat = 0 {
+    open var stepsOffset: CGFloat = 3 {
         didSet {
             setNeedsDisplay()
         }
@@ -72,11 +74,17 @@ public class StepProgressBar: UIView {
     
     // Private implementation
     
+    private var _cornerRadius: CGFloat = 0 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
     private var progressWidth: CGFloat {
         return (frame.width - CGFloat(stepsCount - 1) * stepsOffset) / CGFloat(stepsCount)
     }
     
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         super.draw(rect)
         
         // set start point of subview
@@ -85,7 +93,7 @@ public class StepProgressBar: UIView {
         // loop the all step views, set possition and color
         for index in 1...stepsCount {
             
-            let path = UIBezierPath(roundedRect: CGRect(x: xValue, y: 0, width: progressWidth, height: frame.height), cornerRadius: cornerRadius)
+            let path = UIBezierPath(roundedRect: CGRect(x: xValue, y: 0, width: progressWidth, height: frame.height), cornerRadius: _cornerRadius)
             
             if index <= progress {
                 color.setFill()
