@@ -42,6 +42,12 @@ For `Previous` step:
 progressView.previous()
 ```
 
+### Code
+
+Use the traditional init methods and properties.
+
+## Customization
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
