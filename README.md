@@ -9,6 +9,8 @@
 
 `StepProgressBar` is a very simple and customizable step-by-step progress bar.
 
+![stepprogressbar](https://cloud.githubusercontent.com/assets/14834451/25133702/18165028-2456-11e7-8348-2e5b7ab4a5eb.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
