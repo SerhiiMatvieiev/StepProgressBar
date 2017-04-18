@@ -32,7 +32,7 @@ import StepProgressBar
 @IBOutlet weak var progressView: StepProgressBar!
 ```
 
-**For _Next_ step**
+**_Next_**
 ```swift
 progressView.next()
 ```
