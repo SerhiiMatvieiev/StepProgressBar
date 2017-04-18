@@ -22,12 +22,16 @@ StepProgressBar can be used via code or interface builder.
  > :warning: Importand - change the module to `StepProgressBar` too.
  
 <img width="264" alt="screen shot 2017-04-18 at 17 33 46" src="https://cloud.githubusercontent.com/assets/14834451/25136278/403fd02c-245d-11e7-897a-c0e1230c2f23.png">
+
+3. Castomization
+
+<img width="258" alt="screen shot 2017-04-18 at 17 16 52" src="https://cloud.githubusercontent.com/assets/14834451/25137351/3129707c-2460-11e7-9cea-abccc2d395dd.png">
  
-3. Import `StepProgressBar` in your view controller class.
+4. Import `StepProgressBar` in your view controller class.
 ```swift
 import StepProgressBar
 ```
-4. Create an `IBOutlet` of the view in your view controller class.
+5. Create an `IBOutlet` of the view in your view controller class.
 ```swift
 @IBOutlet weak var progressView: StepProgressBar!
 ```
@@ -45,8 +49,6 @@ progressView.previous()
 ### Code
 
 Use the traditional init methods and properties.
-
-## Customization
 
 ## Example
 
