@@ -27,6 +27,15 @@ StepProgressBar can be used via code or interface builder.
 ```swift
 import StepProgressBar
 ```
+4. Create an `IBOutlet` of the view in your view controller class.
+```swift
+@IBOutlet weak var progressView: StepProgressBar!
+```
+
+5. For ** _next_ ** step
+```swift
+progressView.next()
+```
 
 ## Example
 
