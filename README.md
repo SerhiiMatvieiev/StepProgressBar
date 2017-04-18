@@ -11,6 +11,20 @@
 
 ![stepprogressbar](https://cloud.githubusercontent.com/assets/14834451/25133702/18165028-2456-11e7-8348-2e5b7ab4a5eb.gif)
 
+## Installation
+
+### CocoaPods
+
+StepProgressBar is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'StepProgressBar'
+```
+### Manually
+
+Copy the `StepProgressBar.swift` to your Xcode project. That should do it.
+
 ## Usage
 
 StepProgressBar can be used via code or interface builder.
@@ -59,20 +73,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - iOS 8.0+
 - Xcode 8.0+
 - Swift 3.0+
-
-## Installation
-
-### CocoaPods
-
-StepProgressBar is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'StepProgressBar'
-```
-### Manually
-
-Copy the `StepProgressBar.swift` to your Xcode project. That should do it.
 
 ## Author
 
