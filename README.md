@@ -36,20 +36,12 @@ StepProgressBar can be used via code or interface builder.
 <<<<<<< HEAD
 > :warning: Importand - change the module to `StepProgressBar` too.
 
-=======
- > :warning: Importand - change the module to `StepProgressBar` too.
- 
->>>>>>> d6bb112abe025cf1aa964e931f911a4428d4a148
 <img width="264" alt="screen shot 2017-04-18 at 17 33 46" src="https://cloud.githubusercontent.com/assets/14834451/25136278/403fd02c-245d-11e7-897a-c0e1230c2f23.png">
 
 3. Customization
 
 <img width="258" alt="screen shot 2017-04-18 at 17 16 52" src="https://cloud.githubusercontent.com/assets/14834451/25137351/3129707c-2460-11e7-9cea-abccc2d395dd.png">
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> d6bb112abe025cf1aa964e931f911a4428d4a148
 4. Import `StepProgressBar` in your view controller class.
 ```swift
 import StepProgressBar
