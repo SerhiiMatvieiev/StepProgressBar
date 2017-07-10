@@ -1,6 +1,6 @@
 # StepProgressBar
 
-[![CI Status](http://img.shields.io/travis/SerhiiMatvieiev/StepProgressBar.svg?style=flat)](https://travis-ci.org/SerhiiMatvieiev/StepProgressBar)
+[![CI Status](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/SerhiiMatvieiev/StepProgressBar)
 [![Version](https://img.shields.io/cocoapods/v/StepProgressBar.svg?style=flat)](http://cocoapods.org/pods/StepProgressBar)
 ![Version](https://img.shields.io/badge/Swift-3.0%2B-orange.svg?style=flat)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://cocoapods.org/pods/StepProgressBar)
