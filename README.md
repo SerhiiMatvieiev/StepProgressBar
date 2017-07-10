@@ -2,7 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/SerhiiMatvieiev/StepProgressBar.svg?style=flat)](https://travis-ci.org/SerhiiMatvieiev/StepProgressBar)
 [![Version](https://img.shields.io/cocoapods/v/StepProgressBar.svg?style=flat)](http://cocoapods.org/pods/StepProgressBar)
-[![License](https://img.shields.io/cocoapods/l/StepProgressBar.svg?style=flat)](http://cocoapods.org/pods/StepProgressBar)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://cocoapods.org/pods/StepProgressBar)
 [![Platform](https://img.shields.io/cocoapods/p/StepProgressBar.svg?style=flat)](http://cocoapods.org/pods/StepProgressBar)
 [![Build](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
 
